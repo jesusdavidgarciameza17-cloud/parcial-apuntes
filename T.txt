@@ -4,3 +4,46 @@ https://sgutz96.github.io/DevFront-Academy/Semana-02-CSS/Index.html
 
 
 https://github.com/sgutz96/USBAcademic_MultimediaMoviles.git
+
+
+
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+
+      home: Scaffold(
+        appBar: AppBar(
+          leading: Icon(Icons.star),
+          title: Text("AppBar"),
+          actions: [
+            IconButton(
+              onPressed: (){}, 
+            icon: Icon(Icons.ac_unit_rounded)),
+
+            IconButton(
+              onPressed: (){}, 
+            icon: Icon(Icons.ac_unit_rounded)),
+          ],
+
+        ),
+        body: Center(
+          child: Icon(Icons.access_time)
+
+
+        ),
+      ),
+    );
+  }
+}
+
+
